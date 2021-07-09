@@ -20,6 +20,7 @@ header,
 .view,
 .hero,
 .aside-left,
+.content-central,
 .aside-right,
 .arrow-left{
     display:flex;
@@ -35,6 +36,7 @@ header,
 
 header{ 
     width: 100%;
+    height: 40px;
     justify-content: space-between;
     padding: 3px 0;
 }
@@ -89,7 +91,7 @@ header{
 /* main */
 
 .hero{
-    height: calc(100vh - 34px);
+    height: calc(100vh - 40px);
     width: 100%;
 }
 
@@ -106,7 +108,6 @@ header{
 .content-central{
     width: 70%; 
     flex-grow: 1;
-    background-color: lightblue;
 }
 
 /* aside-left */
@@ -134,6 +135,35 @@ header{
     margin-right: 10px;
 }
 
+/* content-central */
+
+.content-central{
+    flex-wrap: wrap;
+    align-self: flex-start;
+}
+.samu{
+    position: relative;
+}
+
+.name{
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    padding: 3px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 2px;
+}
+
+.fa-microphone-slash{
+    color:red;
+}
+.samu img{
+    width: 100%;
+}
+.video{
+    width: calc(20% - 4px);
+    margin: 0 2px;;
+}
 
 
 
