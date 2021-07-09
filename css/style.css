@@ -5,6 +5,9 @@
 }
 
 /* common */
+body{
+    background-color: #1a1a1a;
+}
 p{ 
     font-size: 12px;
     color: #fff;
@@ -14,8 +17,18 @@ header,
 .header-left, 
 .header-right,
 .recording,
-.view{
+.view,
+.hero,
+.aside-left,
+.aside-right,
+.arrow-left{
     display:flex;
+}
+
+.fa-backward,
+.fa-forward{
+    color: #2db7ff;
+    font-size: 18px;
 }
 
 /* header */
@@ -23,7 +36,6 @@ header,
 header{ 
     width: 100%;
     justify-content: space-between;
-    background-color: #1a1a1a;
     padding: 3px 0;
 }
 .header-left, .header-right{
@@ -75,6 +87,55 @@ header{
     border-radius: 3px;
 }
 /* main */
+
+.hero{
+    height: calc(100vh - 34px);
+    width: 100%;
+}
+
+.aside-left,
+.aside-right{
+    align-items: center;
+    width: 7%;
+}
+
+.aside-right{
+    justify-content: flex-end;
+}
+
+.content-central{
+    width: 70%;
+    flex-grow: 1;
+    background-color: lightblue;
+}
+
+/* aside-left */
+
+.arrow-left,
+.arrow-right{
+    padding: 13px 10px 0 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
+    width: 40px;
+    height: 50px;
+    background-color: #222222;
+    border: 1px solid black;
+    color: #fff;
+}
+
+.arrow-left{
+    margin-left: 10px;
+}
+
+/* aside-right */
+
+.arrow-right{
+    margin-right: 10px;
+}
+
+
+
 
 
 /* footer */
