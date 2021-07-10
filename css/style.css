@@ -108,6 +108,7 @@ header{
 .content-central{
     width: 70%; 
     flex-grow: 1;
+    background-color: pink;
 }
 
 /* aside-left */
@@ -139,10 +140,16 @@ header{
 
 .content-central{
     flex-wrap: wrap;
-    align-self: flex-start;
+    align-content: flex-start;
 }
-.samu{
+
+.video{
     position: relative;
+    width: 20%;
+    border: 1px solid;
+    background-image: url(../img/samu.jpg);
+    background-size: cover;
+    height: 20%;
 }
 
 .name{
@@ -157,13 +164,7 @@ header{
 .fa-microphone-slash{
     color:red;
 }
-.samu img{
-    width: 100%;
-}
-.video{
-    width: calc(20% - 4px);
-    margin: 0 2px;;
-}
+
 
 
 
